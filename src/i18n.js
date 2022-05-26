@@ -6,6 +6,9 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      headerContact: "CONTACT US",
+      headerHome: "HOME",
+      headerAbout: "ABOUT US",
       contactInfoText: "this is the contact page",
       homeInfoText: "this is the home page",
       aboutInfoText: "this is the about page"
@@ -13,6 +16,9 @@ const resources = {
   },
   fi: {
     translation: {
+      headerContact: "OTA YHTEYTTÄ",
+      headerHome: "ETUSIVU",
+      headerAbout: "TIETOA MEISTÄ",
       contactInfoText: "tämä on yhteydenottosivu",
       homeInfoText: "tämä on kotisivu",
       aboutInfoText: "tämä on infosivu"
@@ -20,6 +26,9 @@ const resources = {
   },
   swe: {
     translation: {
+      headerContact: "KONTAKT OSS",
+      headerHome: "HEMSIDA",
+      headerAbout: "MER FRÅN OSS",
       contactInfoText: "det är en contact page",
       homeInfoText: "det är en hemsida",
       aboutInfoText: "det är en about page"
