@@ -1,7 +1,6 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
@@ -20,7 +19,7 @@ const Header = (props) => {
     history.push(pageURL);
   };
 
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -38,7 +37,7 @@ const Header = (props) => {
                 onClick={() => handleButtonClick("/contact")}
                 fontWeight="bold"
               >
-                <b>CONTACT</b>
+                <b>{t("headerContact")}</b>
               </Button>
             </Grid>
             <Grid item>
@@ -46,7 +45,7 @@ const Header = (props) => {
                 color="inherit"
                 onClick={() => handleButtonClick("/home")}
               >
-                <b>HOME</b>
+                <b>{t("headerHome")}</b>
               </Button>
             </Grid>
             <Grid item>
@@ -54,7 +53,7 @@ const Header = (props) => {
                 color="inherit"
                 onClick={() => handleButtonClick("/about")}
               >
-                <b>ABOUT</b>
+                <b>{t("headerAbout")}</b>
               </Button>
             </Grid>
           </Grid>
